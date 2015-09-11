@@ -3,13 +3,11 @@ package Permutation;
 import java.util.Arrays;
 
 public class PermutationLimitInterations {
-
-public static void main(String[] args) {
+	
+	public static void main(String[] args) {
 		
-		int[] ns = {1, 2, 3, 4};
-		int interationsLimit = 1;		
-		
-		permute(ns, 0, ns.length, interationsLimit);
+		int[] ns = {1, 2, 3, 4, 5};
+		permute(ns, 0, ns.length, 2);
 	}
 	
 	private static void swap(int[] v, int i, int j) {
@@ -18,23 +16,19 @@ public static void main(String[] args) {
 		v[j] = t;
 	}
 
-	private static void permute(int[] v, int depth, int n, int interationsLimit) {
-		if (n == depth ) {
+	private static void permute(int[] v, int depth, int n, int setNumber) {
+		if (setNumber == depth) {
 			System.out.println(Arrays.toString(v));
 			
 		} else {
-			
 			for (int i = depth; i < n; i++) {
-				System.out.println("- \t" + Arrays.toString(v) + " i: " + i + " depth: " + depth);
-				// swap
-				swap(v, i, depth);
-				System.out.println("-- \t" + Arrays.toString(v) + " i: " + i + " depth: " + depth);
-				
-				permute(v, depth+1, n, interationsLimit--);
-				
-				// undo
-				swap(v, i, depth);
+				for (int j = i+1; j < n; j++) {
+					swap(v, i, j);
+					permute(v, depth+1, n, setNumber);
+					swap(v, i, j);
+				}
 			}
 		}
-	}	
+	}
+
 }
