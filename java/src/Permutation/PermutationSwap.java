@@ -6,7 +6,7 @@ public class PermutationSwap {
 
 public static void main(String[] args) {
 		
-		int[] ns = {1, 2, 3, 4};
+		int[] ns = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 		permute(ns, 0, ns.length);
 	}
 	
@@ -21,7 +21,7 @@ public static void main(String[] args) {
 
 	private static void permute(int[] v, int depth, int n) {
 		if (n == depth) {
-			System.out.println(Arrays.toString(v));
+//			System.out.println(Arrays.toString(v));
 			
 		} else {
 			for (int i = depth; i < n; i++) {

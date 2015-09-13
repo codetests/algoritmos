@@ -1,0 +1,15 @@
+--- Algoritm Time Comparison ---
+
+- PermutationSwap
+	Swap Algoritm Time for 12 elements: 
+	
+	real	0m5.121s
+	user	0m5.136s
+	sys		0m0.019s
+
+- HeapPermute
+	Heap Algoritm Time for 12 elements:
+	
+	real	0m3.411s
+	user	0m3.413s
+	sys		0m0.030s

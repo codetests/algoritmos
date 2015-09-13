@@ -1,5 +1,5 @@
 package BinaryTree;
-public class BinaryTree {
+public class BinaryTreeWithObject {
 
 	Node root;
 
@@ -165,7 +165,7 @@ public class BinaryTree {
 
 public static void main(String[] args) {
 
-		BinaryTree theTree = new BinaryTree();
+		BinaryTreeWithObject theTree = new BinaryTreeWithObject();
 
 		theTree.addNode(50, "Boss");
 
