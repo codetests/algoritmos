@@ -1,8 +1,6 @@
 package Graph;
 
-import java.util.Arrays;
-
-public class UndirectedGraph {
+public class DirectedGraph {
 
 	public static  String adjList[] = new String[15];
 	public static  Integer visited[] = new  Integer[adjList.length];
@@ -16,24 +14,24 @@ public class UndirectedGraph {
 		for (int i = 0; i < visited.length; i++) visited[i] = 0;
 		
 		addVertex(0, "1");
-		addVertex(0, "6");
-		addVertex(0, "8");
-		addVertex(1, "4");
-		addVertex(1, "6");
-		addVertex(1, "9");
-		addVertex(2, "4");
-		addVertex(2, "6");
+		addVertex(1, "2");
+		addVertex(2, "3");
 		addVertex(3, "4");
 		addVertex(3, "5");
-		addVertex(3, "8");
-		addVertex(4, "5");
-		addVertex(4, "9");
+		addVertex(4, "0");
+		addVertex(5, "6");
+		addVertex(6, "4");
+		addVertex(6, "7");
 		addVertex(7, "8");
-		addVertex(7, "9");
+		addVertex(8, "0");
+		addVertex(8, "9");
+		addVertex(8, "10");
+		addVertex(9, "4");
+		addVertex(10, "0");
 		
 		printGraphList();
 		
-		DFS(0);		
+		DFS(0);
 	}
 
 	// Busca em profundidade
@@ -76,16 +74,16 @@ public class UndirectedGraph {
 	
 	public static void addVertex(int pos, String value) {
 		
-		int posInv = Integer.parseInt(value);
+//		int posInv = Integer.parseInt(value);
 		
 		adjList[pos] = ("".equals(adjList[pos])) ? "" + value : adjList[pos] + "," + value;
-		adjList[posInv] = ("".equals(adjList[posInv])) ? "" + pos : adjList[posInv] + "," + pos;
+//		adjList[posInv] = ("".equals(adjList[posInv])) ? "" + pos : adjList[posInv] + "," + pos;
 		
 		if (pos > listSize)
 			listSize = pos;
 		
-		if (posInv > listSize)
-			listSize = posInv;		
+//		if (posInv > listSize)
+//			listSize = posInv;		
 	}
 	
 	public static void printGraphList() {
