@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/s.moraes/workspace/algorithms/c++/build",
+  "command": "/usr/bin/c++     -g   -o CMakeFiles/BubbleSort.dir/Sort/BubbleSort.cpp.o -c /home/s.moraes/workspace/algorithms/c++/Sort/BubbleSort.cpp",
+  "file": "/home/s.moraes/workspace/algorithms/c++/Sort/BubbleSort.cpp"
+}
+]

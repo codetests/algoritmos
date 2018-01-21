@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20180121-2043-Experimental"
+	Name="x51"
+	Generator="ctest-3.5.2"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="4.8.5"
+	OSName="Linux"
+	Hostname="x51"
+	OSRelease="4.4.104-39-default"
+	OSVersion="#1 SMP Thu Jan 4 08:11:03 UTC 2018 (7db1912)"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="4096"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="16385"
+	TotalPhysicalMemory="7894"
+	LogicalProcessorsPerPhysical="4"
+	ProcessorClockFrequency="3077.41"
+	>
+	<Testing>
+		<StartDateTime>Jan 21 18:43 -02</StartDateTime>
+		<StartTestTime>1516567438</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 21 18:43 -02</EndDateTime>
+		<EndTestTime>1516567438</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
